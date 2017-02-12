@@ -1,0 +1,1734 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Jan 08 10:36:01 2017
+| Host         : DESKTOP-L92UD1G running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+| Design       : top
+| Device       : xc7k160tffg676-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 335
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| CHECK-3   | Warning  | Report rule limit reached                           | 2          |
+| DPIP-1    | Warning  | Input pipelining                                    | 9          |
+| DPIR-1    | Warning  | Asynchronous driver check                           | 8          |
+| DPOP-1    | Warning  | PREG Output pipelining                              | 7          |
+| DPOP-2    | Warning  | MREG Output pipelining                              | 5          |
+| PDRC-153  | Warning  | Gated clock check                                   | 262        |
+| PLCK-12   | Warning  | Clock Placer Checks                                 | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check                          | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check                          | 20         |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP u_display_vga/layer1/pos input u_display_vga/layer1/pos/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP u_display_vga/layer1/pos0 input u_display_vga/layer1/pos0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP u_display_vga/layer2_0/pos0__0 input u_display_vga/layer2_0/pos0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP u_display_vga/layer2_0/pos2 input u_display_vga/layer2_0/pos2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP u_display_vga/layer2_1/pos0__0 input u_display_vga/layer2_1/pos0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP u_display_vga/layer2_1/pos2 input u_display_vga/layer2_1/pos2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP u_display_vga/layer3/pos input u_display_vga/layer3/pos/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP u_display_vga/layer4/pos input u_display_vga/layer4/pos/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP u_display_vga/layer4/pos input u_display_vga/layer4/pos/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_0/pos2 input pin u_display_vga/layer2_0/pos2/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_0/pos2 input pin u_display_vga/layer2_0/pos2/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_0/pos2 input pin u_display_vga/layer2_0/pos2/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_0/pos2 input pin u_display_vga/layer2_0/pos2/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_1/pos2 input pin u_display_vga/layer2_1/pos2/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_1/pos2 input pin u_display_vga/layer2_1/pos2/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_1/pos2 input pin u_display_vga/layer2_1/pos2/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP u_display_vga/layer2_1/pos2 input pin u_display_vga/layer2_1/pos2/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer1/pos output u_display_vga/layer1/pos/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer2_0/pos0 output u_display_vga/layer2_0/pos0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer2_0/pos0__0 output u_display_vga/layer2_0/pos0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer2_1/pos0 output u_display_vga/layer2_1/pos0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer2_1/pos0__0 output u_display_vga/layer2_1/pos0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer3/pos output u_display_vga/layer3/pos/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP u_display_vga/layer4/pos output u_display_vga/layer4/pos/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP u_display_vga/layer1/pos multiplier stage u_display_vga/layer1/pos/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP u_display_vga/layer2_0/pos0 multiplier stage u_display_vga/layer2_0/pos0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP u_display_vga/layer2_1/pos0 multiplier stage u_display_vga/layer2_1/pos0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP u_display_vga/layer3/pos multiplier stage u_display_vga/layer3/pos/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP u_display_vga/layer4/pos multiplier stage u_display_vga/layer4/pos/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net u_calc/d_in_reg[6] is a gated clock net sourced by a combinational pin u_calc/player_no_reg_i_1/O, cell u_calc/player_no_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[171]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[171]_LDC_i_1/O, cell u_calc/tmp_map_reg[171]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[173]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[173]_LDC_i_1/O, cell u_calc/tmp_map_reg[173]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[174]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[174]_LDC_i_1/O, cell u_calc/tmp_map_reg[174]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[175]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[175]_LDC_i_1/O, cell u_calc/tmp_map_reg[175]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[176]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[176]_LDC_i_1/O, cell u_calc/tmp_map_reg[176]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[177]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[177]_LDC_i_1/O, cell u_calc/tmp_map_reg[177]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[179]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[179]_LDC_i_1/O, cell u_calc/tmp_map_reg[179]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[181]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[181]_LDC_i_1/O, cell u_calc/tmp_map_reg[181]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[183]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[183]_LDC_i_1/O, cell u_calc/tmp_map_reg[183]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[184]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[184]_LDC_i_1/O, cell u_calc/tmp_map_reg[184]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[185]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[185]_LDC_i_1/O, cell u_calc/tmp_map_reg[185]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[186]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[186]_LDC_i_1/O, cell u_calc/tmp_map_reg[186]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[187]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[187]_LDC_i_1/O, cell u_calc/tmp_map_reg[187]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[189]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[189]_LDC_i_1/O, cell u_calc/tmp_map_reg[189]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[191]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[191]_LDC_i_1/O, cell u_calc/tmp_map_reg[191]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[194]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[194]_LDC_i_1/O, cell u_calc/tmp_map_reg[194]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[195]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[195]_LDC_i_1/O, cell u_calc/tmp_map_reg[195]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[196]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[196]_LDC_i_1/O, cell u_calc/tmp_map_reg[196]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[197]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[197]_LDC_i_1/O, cell u_calc/tmp_map_reg[197]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[199]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[199]_LDC_i_1/O, cell u_calc/tmp_map_reg[199]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[200]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[200]_LDC_i_1/O, cell u_calc/tmp_map_reg[200]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[201]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[201]_LDC_i_1/O, cell u_calc/tmp_map_reg[201]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[204]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[204]_LDC_i_1/O, cell u_calc/tmp_map_reg[204]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[206]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[206]_LDC_i_1/O, cell u_calc/tmp_map_reg[206]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[209]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[209]_LDC_i_1/O, cell u_calc/tmp_map_reg[209]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[210]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[210]_LDC_i_1/O, cell u_calc/tmp_map_reg[210]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[211]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[211]_LDC_i_1/O, cell u_calc/tmp_map_reg[211]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[214]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[214]_LDC_i_1/O, cell u_calc/tmp_map_reg[214]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[216]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[216]_LDC_i_1/O, cell u_calc/tmp_map_reg[216]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[219]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[219]_LDC_i_1/O, cell u_calc/tmp_map_reg[219]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[220]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[220]_LDC_i_1/O, cell u_calc/tmp_map_reg[220]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[221]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[221]_LDC_i_1/O, cell u_calc/tmp_map_reg[221]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[224]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[224]_LDC_i_1/O, cell u_calc/tmp_map_reg[224]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[226]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[226]_LDC_i_1/O, cell u_calc/tmp_map_reg[226]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[229]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[229]_LDC_i_1/O, cell u_calc/tmp_map_reg[229]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[250]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[250]_LDC_i_1/O, cell u_calc/tmp_map_reg[250]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[251]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[251]_LDC_i_1/O, cell u_calc/tmp_map_reg[251]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[254]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[254]_LDC_i_1/O, cell u_calc/tmp_map_reg[254]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[256]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[256]_LDC_i_1/O, cell u_calc/tmp_map_reg[256]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[259]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[259]_LDC_i_1/O, cell u_calc/tmp_map_reg[259]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[260]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[260]_LDC_i_1/O, cell u_calc/tmp_map_reg[260]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[261]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[261]_LDC_i_1/O, cell u_calc/tmp_map_reg[261]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[264]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[264]_LDC_i_1/O, cell u_calc/tmp_map_reg[264]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[266]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[266]_LDC_i_1/O, cell u_calc/tmp_map_reg[266]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[269]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[269]_LDC_i_1/O, cell u_calc/tmp_map_reg[269]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[272]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[272]_LDC_i_1/O, cell u_calc/tmp_map_reg[272]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[274]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[274]_LDC_i_1/O, cell u_calc/tmp_map_reg[274]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[282]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[282]_LDC_i_1/O, cell u_calc/tmp_map_reg[282]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[284]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[284]_LDC_i_1/O, cell u_calc/tmp_map_reg[284]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[287]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[287]_LDC_i_1/O, cell u_calc/tmp_map_reg[287]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[289]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[289]_LDC_i_1/O, cell u_calc/tmp_map_reg[289]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[290]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[290]_LDC_i_1/O, cell u_calc/tmp_map_reg[290]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[293]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[293]_LDC_i_1/O, cell u_calc/tmp_map_reg[293]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[297]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[297]_LDC_i_1/O, cell u_calc/tmp_map_reg[297]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[299]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[299]_LDC_i_1/O, cell u_calc/tmp_map_reg[299]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[300]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[300]_LDC_i_1/O, cell u_calc/tmp_map_reg[300]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[303]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[303]_LDC_i_1/O, cell u_calc/tmp_map_reg[303]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[305]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[305]_LDC_i_1/O, cell u_calc/tmp_map_reg[305]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[306]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[306]_LDC_i_1/O, cell u_calc/tmp_map_reg[306]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[307]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[307]_LDC_i_1/O, cell u_calc/tmp_map_reg[307]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[309]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[309]_LDC_i_1/O, cell u_calc/tmp_map_reg[309]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[331]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[331]_LDC_i_1/O, cell u_calc/tmp_map_reg[331]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[333]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[333]_LDC_i_1/O, cell u_calc/tmp_map_reg[333]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[334]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[334]_LDC_i_1/O, cell u_calc/tmp_map_reg[334]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[337]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[337]_LDC_i_1/O, cell u_calc/tmp_map_reg[337]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[339]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[339]_LDC_i_1/O, cell u_calc/tmp_map_reg[339]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[341]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[341]_LDC_i_1/O, cell u_calc/tmp_map_reg[341]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[343]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[343]_LDC_i_1/O, cell u_calc/tmp_map_reg[343]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[347]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[347]_LDC_i_1/O, cell u_calc/tmp_map_reg[347]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[349]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[349]_LDC_i_1/O, cell u_calc/tmp_map_reg[349]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[352]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[352]_LDC_i_1/O, cell u_calc/tmp_map_reg[352]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[354]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[354]_LDC_i_1/O, cell u_calc/tmp_map_reg[354]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[357]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[357]_LDC_i_1/O, cell u_calc/tmp_map_reg[357]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[359]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[359]_LDC_i_1/O, cell u_calc/tmp_map_reg[359]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[367]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[367]_LDC_i_1/O, cell u_calc/tmp_map_reg[367]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[369]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[369]_LDC_i_1/O, cell u_calc/tmp_map_reg[369]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[371]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[371]_LDC_i_1/O, cell u_calc/tmp_map_reg[371]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[374]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[374]_LDC_i_1/O, cell u_calc/tmp_map_reg[374]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[375]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[375]_LDC_i_1/O, cell u_calc/tmp_map_reg[375]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[376]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[376]_LDC_i_1/O, cell u_calc/tmp_map_reg[376]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[379]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[379]_LDC_i_1/O, cell u_calc/tmp_map_reg[379]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[381]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[381]_LDC_i_1/O, cell u_calc/tmp_map_reg[381]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[384]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[384]_LDC_i_1/O, cell u_calc/tmp_map_reg[384]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[385]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[385]_LDC_i_1/O, cell u_calc/tmp_map_reg[385]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[386]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[386]_LDC_i_1/O, cell u_calc/tmp_map_reg[386]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[389]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[389]_LDC_i_1/O, cell u_calc/tmp_map_reg[389]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[410]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[410]_LDC_i_1/O, cell u_calc/tmp_map_reg[410]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[411]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[411]_LDC_i_1/O, cell u_calc/tmp_map_reg[411]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[414]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[414]_LDC_i_1/O, cell u_calc/tmp_map_reg[414]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[415]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[415]_LDC_i_1/O, cell u_calc/tmp_map_reg[415]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[416]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[416]_LDC_i_1/O, cell u_calc/tmp_map_reg[416]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[419]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[419]_LDC_i_1/O, cell u_calc/tmp_map_reg[419]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[421]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[421]_LDC_i_1/O, cell u_calc/tmp_map_reg[421]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[424]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[424]_LDC_i_1/O, cell u_calc/tmp_map_reg[424]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[425]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[425]_LDC_i_1/O, cell u_calc/tmp_map_reg[425]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[426]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[426]_LDC_i_1/O, cell u_calc/tmp_map_reg[426]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[429]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[429]_LDC_i_1/O, cell u_calc/tmp_map_reg[429]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[432]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[432]_LDC_i_1/O, cell u_calc/tmp_map_reg[432]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[434]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[434]_LDC_i_1/O, cell u_calc/tmp_map_reg[434]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[437]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[437]_LDC_i_1/O, cell u_calc/tmp_map_reg[437]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[439]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[439]_LDC_i_1/O, cell u_calc/tmp_map_reg[439]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[442]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[442]_LDC_i_1/O, cell u_calc/tmp_map_reg[442]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[444]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[444]_LDC_i_1/O, cell u_calc/tmp_map_reg[444]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[447]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[447]_LDC_i_1/O, cell u_calc/tmp_map_reg[447]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[449]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[449]_LDC_i_1/O, cell u_calc/tmp_map_reg[449]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[450]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[450]_LDC_i_1/O, cell u_calc/tmp_map_reg[450]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[453]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[453]_LDC_i_1/O, cell u_calc/tmp_map_reg[453]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[457]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[457]_LDC_i_1/O, cell u_calc/tmp_map_reg[457]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[459]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[459]_LDC_i_1/O, cell u_calc/tmp_map_reg[459]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[460]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[460]_LDC_i_1/O, cell u_calc/tmp_map_reg[460]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[463]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[463]_LDC_i_1/O, cell u_calc/tmp_map_reg[463]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[465]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[465]_LDC_i_1/O, cell u_calc/tmp_map_reg[465]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[466]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[466]_LDC_i_1/O, cell u_calc/tmp_map_reg[466]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[467]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[467]_LDC_i_1/O, cell u_calc/tmp_map_reg[467]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[469]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[469]_LDC_i_1/O, cell u_calc/tmp_map_reg[469]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[491]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[491]_LDC_i_1/O, cell u_calc/tmp_map_reg[491]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[492]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[492]_LDC_i_1/O, cell u_calc/tmp_map_reg[492]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[494]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[494]_LDC_i_1/O, cell u_calc/tmp_map_reg[494]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[496]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[496]_LDC_i_1/O, cell u_calc/tmp_map_reg[496]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[499]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[499]_LDC_i_1/O, cell u_calc/tmp_map_reg[499]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[501]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[501]_LDC_i_1/O, cell u_calc/tmp_map_reg[501]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[503]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[503]_LDC_i_1/O, cell u_calc/tmp_map_reg[503]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[506]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[506]_LDC_i_1/O, cell u_calc/tmp_map_reg[506]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[509]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[509]_LDC_i_1/O, cell u_calc/tmp_map_reg[509]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#126 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[512]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[512]_LDC_i_1/O, cell u_calc/tmp_map_reg[512]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#127 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[514]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[514]_LDC_i_1/O, cell u_calc/tmp_map_reg[514]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#128 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[516]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[516]_LDC_i_1/O, cell u_calc/tmp_map_reg[516]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#129 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[517]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[517]_LDC_i_1/O, cell u_calc/tmp_map_reg[517]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#130 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[518]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[518]_LDC_i_1/O, cell u_calc/tmp_map_reg[518]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#131 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[519]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[519]_LDC_i_1/O, cell u_calc/tmp_map_reg[519]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#132 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[520]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[520]_LDC_i_1/O, cell u_calc/tmp_map_reg[520]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#133 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[522]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[522]_LDC_i_1/O, cell u_calc/tmp_map_reg[522]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#134 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[523]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[523]_LDC_i_1/O, cell u_calc/tmp_map_reg[523]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#135 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[524]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[524]_LDC_i_1/O, cell u_calc/tmp_map_reg[524]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#136 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[527]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[527]_LDC_i_1/O, cell u_calc/tmp_map_reg[527]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#137 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[529]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[529]_LDC_i_1/O, cell u_calc/tmp_map_reg[529]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#138 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[530]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[530]_LDC_i_1/O, cell u_calc/tmp_map_reg[530]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#139 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[531]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[531]_LDC_i_1/O, cell u_calc/tmp_map_reg[531]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#140 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[534]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[534]_LDC_i_1/O, cell u_calc/tmp_map_reg[534]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#141 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[536]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[536]_LDC_i_1/O, cell u_calc/tmp_map_reg[536]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#142 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[539]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[539]_LDC_i_1/O, cell u_calc/tmp_map_reg[539]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#143 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[540]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[540]_LDC_i_1/O, cell u_calc/tmp_map_reg[540]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#144 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[541]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[541]_LDC_i_1/O, cell u_calc/tmp_map_reg[541]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#145 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[544]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[544]_LDC_i_1/O, cell u_calc/tmp_map_reg[544]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#146 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[546]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[546]_LDC_i_1/O, cell u_calc/tmp_map_reg[546]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#147 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[547]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[547]_LDC_i_1/O, cell u_calc/tmp_map_reg[547]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#148 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[549]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[549]_LDC_i_1/O, cell u_calc/tmp_map_reg[549]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#149 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[570]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[570]_LDC_i_1/O, cell u_calc/tmp_map_reg[570]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#150 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[571]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[571]_LDC_i_1/O, cell u_calc/tmp_map_reg[571]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#151 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[574]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[574]_LDC_i_1/O, cell u_calc/tmp_map_reg[574]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#152 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[579]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[579]_LDC_i_1/O, cell u_calc/tmp_map_reg[579]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#153 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[589]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[589]_LDC_i_1/O, cell u_calc/tmp_map_reg[589]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#154 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[592]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[592]_LDC_i_1/O, cell u_calc/tmp_map_reg[592]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#155 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[594]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[594]_LDC_i_1/O, cell u_calc/tmp_map_reg[594]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#156 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[597]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[597]_LDC_i_1/O, cell u_calc/tmp_map_reg[597]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#157 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[599]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[599]_LDC_i_1/O, cell u_calc/tmp_map_reg[599]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#158 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[602]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[602]_LDC_i_1/O, cell u_calc/tmp_map_reg[602]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#159 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[604]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[604]_LDC_i_1/O, cell u_calc/tmp_map_reg[604]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#160 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[607]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[607]_LDC_i_1/O, cell u_calc/tmp_map_reg[607]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#161 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[609]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[609]_LDC_i_1/O, cell u_calc/tmp_map_reg[609]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#162 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[614]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[614]_LDC_i_1/O, cell u_calc/tmp_map_reg[614]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#163 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[624]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[624]_LDC_i_1/O, cell u_calc/tmp_map_reg[624]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#164 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[625]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[625]_LDC_i_1/O, cell u_calc/tmp_map_reg[625]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#165 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[626]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[626]_LDC_i_1/O, cell u_calc/tmp_map_reg[626]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#166 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[629]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[629]_LDC_i_1/O, cell u_calc/tmp_map_reg[629]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#167 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[651]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[651]_LDC_i_1/O, cell u_calc/tmp_map_reg[651]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#168 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[654]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[654]_LDC_i_1/O, cell u_calc/tmp_map_reg[654]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#169 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[655]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[655]_LDC_i_1/O, cell u_calc/tmp_map_reg[655]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#170 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[656]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[656]_LDC_i_1/O, cell u_calc/tmp_map_reg[656]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#171 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[659]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[659]_LDC_i_1/O, cell u_calc/tmp_map_reg[659]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#172 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[661]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[661]_LDC_i_1/O, cell u_calc/tmp_map_reg[661]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#173 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[664]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[664]_LDC_i_1/O, cell u_calc/tmp_map_reg[664]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#174 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[665]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[665]_LDC_i_1/O, cell u_calc/tmp_map_reg[665]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#175 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[666]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[666]_LDC_i_1/O, cell u_calc/tmp_map_reg[666]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#176 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[669]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[669]_LDC_i_1/O, cell u_calc/tmp_map_reg[669]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#177 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[672]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[672]_LDC_i_1/O, cell u_calc/tmp_map_reg[672]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#178 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[674]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[674]_LDC_i_1/O, cell u_calc/tmp_map_reg[674]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#179 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[677]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[677]_LDC_i_1/O, cell u_calc/tmp_map_reg[677]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#180 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[679]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[679]_LDC_i_1/O, cell u_calc/tmp_map_reg[679]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#181 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[682]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[682]_LDC_i_1/O, cell u_calc/tmp_map_reg[682]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#182 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[687]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[687]_LDC_i_1/O, cell u_calc/tmp_map_reg[687]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#183 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[689]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[689]_LDC_i_1/O, cell u_calc/tmp_map_reg[689]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#184 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[690]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[690]_LDC_i_1/O, cell u_calc/tmp_map_reg[690]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#185 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[691]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[691]_LDC_i_1/O, cell u_calc/tmp_map_reg[691]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#186 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[694]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[694]_LDC_i_1/O, cell u_calc/tmp_map_reg[694]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#187 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[696]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[696]_LDC_i_1/O, cell u_calc/tmp_map_reg[696]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#188 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[698]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[698]_LDC_i_1/O, cell u_calc/tmp_map_reg[698]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#189 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[700]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[700]_LDC_i_1/O, cell u_calc/tmp_map_reg[700]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#190 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[701]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[701]_LDC_i_1/O, cell u_calc/tmp_map_reg[701]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#191 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[704]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[704]_LDC_i_1/O, cell u_calc/tmp_map_reg[704]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#192 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[706]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[706]_LDC_i_1/O, cell u_calc/tmp_map_reg[706]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#193 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[708]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[708]_LDC_i_1/O, cell u_calc/tmp_map_reg[708]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#194 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[709]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[709]_LDC_i_1/O, cell u_calc/tmp_map_reg[709]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#195 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[730]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[730]_LDC_i_1/O, cell u_calc/tmp_map_reg[730]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#196 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[731]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[731]_LDC_i_1/O, cell u_calc/tmp_map_reg[731]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#197 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[732]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[732]_LDC_i_1/O, cell u_calc/tmp_map_reg[732]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#198 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[734]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[734]_LDC_i_1/O, cell u_calc/tmp_map_reg[734]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#199 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[735]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[735]_LDC_i_1/O, cell u_calc/tmp_map_reg[735]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#200 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[736]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[736]_LDC_i_1/O, cell u_calc/tmp_map_reg[736]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#201 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[738]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[738]_LDC_i_1/O, cell u_calc/tmp_map_reg[738]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#202 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[742]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[742]_LDC_i_1/O, cell u_calc/tmp_map_reg[742]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#203 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[744]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[744]_LDC_i_1/O, cell u_calc/tmp_map_reg[744]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#204 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[745]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[745]_LDC_i_1/O, cell u_calc/tmp_map_reg[745]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#205 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[746]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[746]_LDC_i_1/O, cell u_calc/tmp_map_reg[746]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#206 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[748]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[748]_LDC_i_1/O, cell u_calc/tmp_map_reg[748]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#207 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[752]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[752]_LDC_i_1/O, cell u_calc/tmp_map_reg[752]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#208 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[754]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[754]_LDC_i_1/O, cell u_calc/tmp_map_reg[754]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#209 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[762]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[762]_LDC_i_1/O, cell u_calc/tmp_map_reg[762]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#210 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[764]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[764]_LDC_i_1/O, cell u_calc/tmp_map_reg[764]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#211 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[767]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[767]_LDC_i_1/O, cell u_calc/tmp_map_reg[767]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#212 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[769]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[769]_LDC_i_1/O, cell u_calc/tmp_map_reg[769]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#213 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[771]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[771]_LDC_i_1/O, cell u_calc/tmp_map_reg[771]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#214 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[774]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[774]_LDC_i_1/O, cell u_calc/tmp_map_reg[774]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#215 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[775]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[775]_LDC_i_1/O, cell u_calc/tmp_map_reg[775]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#216 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[776]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[776]_LDC_i_1/O, cell u_calc/tmp_map_reg[776]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#217 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[779]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[779]_LDC_i_1/O, cell u_calc/tmp_map_reg[779]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#218 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[781]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[781]_LDC_i_1/O, cell u_calc/tmp_map_reg[781]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#219 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[784]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[784]_LDC_i_1/O, cell u_calc/tmp_map_reg[784]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#220 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[785]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[785]_LDC_i_1/O, cell u_calc/tmp_map_reg[785]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#221 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[786]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[786]_LDC_i_1/O, cell u_calc/tmp_map_reg[786]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#222 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[789]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[789]_LDC_i_1/O, cell u_calc/tmp_map_reg[789]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#223 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[810]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[810]_LDC_i_1/O, cell u_calc/tmp_map_reg[810]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#224 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[811]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[811]_LDC_i_1/O, cell u_calc/tmp_map_reg[811]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#225 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[814]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[814]_LDC_i_1/O, cell u_calc/tmp_map_reg[814]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#226 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[815]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[815]_LDC_i_1/O, cell u_calc/tmp_map_reg[815]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#227 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[816]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[816]_LDC_i_1/O, cell u_calc/tmp_map_reg[816]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#228 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[819]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[819]_LDC_i_1/O, cell u_calc/tmp_map_reg[819]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#229 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[820]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[820]_LDC_i_1/O, cell u_calc/tmp_map_reg[820]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#230 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[821]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[821]_LDC_i_1/O, cell u_calc/tmp_map_reg[821]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#231 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[824]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[824]_LDC_i_1/O, cell u_calc/tmp_map_reg[824]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#232 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[825]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[825]_LDC_i_1/O, cell u_calc/tmp_map_reg[825]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#233 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[826]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[826]_LDC_i_1/O, cell u_calc/tmp_map_reg[826]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#234 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[829]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[829]_LDC_i_1/O, cell u_calc/tmp_map_reg[829]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#235 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[831]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[831]_LDC_i_1/O, cell u_calc/tmp_map_reg[831]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#236 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[834]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[834]_LDC_i_1/O, cell u_calc/tmp_map_reg[834]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#237 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[835]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[835]_LDC_i_1/O, cell u_calc/tmp_map_reg[835]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#238 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[836]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[836]_LDC_i_1/O, cell u_calc/tmp_map_reg[836]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#239 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[837]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[837]_LDC_i_1/O, cell u_calc/tmp_map_reg[837]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#240 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[839]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[839]_LDC_i_1/O, cell u_calc/tmp_map_reg[839]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#241 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[840]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[840]_LDC_i_1/O, cell u_calc/tmp_map_reg[840]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#242 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[841]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[841]_LDC_i_1/O, cell u_calc/tmp_map_reg[841]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#243 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[844]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[844]_LDC_i_1/O, cell u_calc/tmp_map_reg[844]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#244 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[846]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[846]_LDC_i_1/O, cell u_calc/tmp_map_reg[846]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#245 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[849]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[849]_LDC_i_1/O, cell u_calc/tmp_map_reg[849]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#246 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[850]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[850]_LDC_i_1/O, cell u_calc/tmp_map_reg[850]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#247 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[851]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[851]_LDC_i_1/O, cell u_calc/tmp_map_reg[851]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#248 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[852]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[852]_LDC_i_1/O, cell u_calc/tmp_map_reg[852]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#249 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[854]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[854]_LDC_i_1/O, cell u_calc/tmp_map_reg[854]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#250 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[856]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[856]_LDC_i_1/O, cell u_calc/tmp_map_reg[856]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#251 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[858]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[858]_LDC_i_1/O, cell u_calc/tmp_map_reg[858]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#252 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[859]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[859]_LDC_i_1/O, cell u_calc/tmp_map_reg[859]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#253 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[860]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[860]_LDC_i_1/O, cell u_calc/tmp_map_reg[860]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#254 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[861]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[861]_LDC_i_1/O, cell u_calc/tmp_map_reg[861]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#255 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[862]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[862]_LDC_i_1/O, cell u_calc/tmp_map_reg[862]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#256 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[864]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[864]_LDC_i_1/O, cell u_calc/tmp_map_reg[864]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#257 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[866]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[866]_LDC_i_1/O, cell u_calc/tmp_map_reg[866]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#258 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[868]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[868]_LDC_i_1/O, cell u_calc/tmp_map_reg[868]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#259 Warning
+Gated clock check  
+Net u_calc/tmp_map_reg[869]_LDC_i_1_n_2 is a gated clock net sourced by a combinational pin u_calc/tmp_map_reg[869]_LDC_i_1/O, cell u_calc/tmp_map_reg[869]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#260 Warning
+Gated clock check  
+Net u_menu/player1_y_reg[2]_P is a gated clock net sourced by a combinational pin u_menu/player2_x_reg[7]_LDC_i_1/O, cell u_menu/player2_x_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#261 Warning
+Gated clock check  
+Net u_ps2_keyboard/E[0] is a gated clock net sourced by a combinational pin u_ps2_keyboard/player1_move_reg[1]_i_2/O, cell u_ps2_keyboard/player1_move_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#262 Warning
+Gated clock check  
+Net u_ps2_keyboard/player2_move_inferred__0/i__n_2 is a gated clock net sourced by a combinational pin u_ps2_keyboard/player2_move_inferred__0/i_/O, cell u_ps2_keyboard/player2_move_inferred__0/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	ps2_clk_IBUF_inst (IBUF.O) is locked to N18
+	ps2_clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y9
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_dead_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_move_now_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_move_now_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_step_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_step_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[2]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[2]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[3]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[3]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[5]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_x_reg[5]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_y_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_y_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_y_reg[2]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_y_reg[2]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_y_reg[3]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[15]) which is driven by a register (u_calc/player1_y_reg[3]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_dead_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_move_now_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_move_now_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_step_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_step_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[2]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[2]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[3]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[3]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[5]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_x_reg[5]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_y_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_y_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_y_reg[2]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_y_reg[2]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_y_reg[3]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram has an input control pin u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: u_display_vga/layer2_0/u_ic_players_img/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/addra[13]) which is driven by a register (u_calc/player1_y_reg[3]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

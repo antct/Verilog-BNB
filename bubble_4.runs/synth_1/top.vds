@@ -1,0 +1,1437 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Jan 08 10:17:18 2017
+# Process ID: 10612
+# Current directory: C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/top.vds
+# Journal file: C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7k160tffg676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7552 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 281.660 ; gain = 71.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Xilinx/ISE/bubble_4/top.v:24]
+INFO: [Synth 8-638] synthesizing module 'menu' [C:/Xilinx/ISE/bubble_4/menu.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/ISE/bubble_4/menu.v:65]
+INFO: [Synth 8-256] done synthesizing module 'menu' (1#1) [C:/Xilinx/ISE/bubble_4/menu.v:21]
+INFO: [Synth 8-638] synthesizing module 'music_player' [C:/Xilinx/ISE/bubble_4/music_player.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/ISE/bubble_4/music_player.v:88]
+INFO: [Synth 8-256] done synthesizing module 'music_player' (2#1) [C:/Xilinx/ISE/bubble_4/music_player.v:3]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:76]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:91]
+WARNING: [Synth 8-5788] Register ps2_byte_buf_reg in module ps2_keyboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:53]
+WARNING: [Synth 8-5788] Register key_release_reg in module ps2_keyboard is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:70]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (3#1) [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:21]
+INFO: [Synth 8-638] synthesizing module 'calc' [C:/Xilinx/ISE/bubble_4/calc.v:21]
+	Parameter block_size bound to: 48 - type: integer 
+	Parameter block_totalx bound to: 12 - type: integer 
+	Parameter block_totaly bound to: 9 - type: integer 
+	Parameter block_total bound to: 108 - type: integer 
+	Parameter bubble_range bound to: 2 - type: integer 
+	Parameter bubble_box bound to: 5 - type: integer 
+	Parameter blow_time bound to: 4194304 - type: integer 
+	Parameter count_down bound to: 33554432 - type: integer 
+	Parameter player_radius bound to: 10 - type: integer 
+	Parameter bubble_num bound to: 4 - type: integer 
+	Parameter right_box_mask1 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000010110000000000000000000000000000000000000000000000000000000 
+	Parameter right_box_mask2 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000 
+	Parameter right_box_mask3 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000011010000000000000000000000000000000000000000000000000000000 
+	Parameter right_box_mask4 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000111110101100000000000000000000000000000000000000000000000000 
+	Parameter right_box_mask5 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000111110110000000000000000000000000000000000000000000000000000 
+	Parameter right_box_mask6 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000111110110100000000000000000000000000000000000000000000000000 
+	Parameter left_box_mask1 bound to: 125'b00000000000000000000000000000000000000000000000000000000101100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter left_box_mask2 bound to: 125'b00000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter left_box_mask3 bound to: 125'b00000000000000000000000000000000000000000000000000000000110100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter left_box_mask4 bound to: 125'b00000000000000000000000000000000000000000000000000010111111100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter left_box_mask5 bound to: 125'b00000000000000000000000000000000000000000000000000011001111100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter left_box_mask6 bound to: 125'b00000000000000000000000000000000000000000000000000011011111100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter up_box_mask1 bound to: 125'b00000000000000000000000000000000000010110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter up_box_mask2 bound to: 125'b00000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter up_box_mask3 bound to: 125'b00000000000000000000000000000000000011010000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter up_box_mask4 bound to: 125'b00000000000101100000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter up_box_mask5 bound to: 125'b00000000000110000000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter up_box_mask6 bound to: 125'b00000000000110100000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter down_box_mask1 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000101100000000000000000000000000000000000 
+	Parameter down_box_mask2 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000 
+	Parameter down_box_mask3 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000110100000000000000000000000000000000000 
+	Parameter down_box_mask4 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000010110000000000 
+	Parameter down_box_mask5 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000011000000000000 
+	Parameter down_box_mask6 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000011010000000000 
+	Parameter rightmask1 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000 
+	Parameter rightmask2 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000111111111100000000000000000000000000000000000000000000000000 
+	Parameter leftmask1 bound to: 125'b00000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter leftmask2 bound to: 125'b00000000000000000000000000000000000000000000000000111111111100000000000000000000000000000000000000000000000000000000000000000 
+	Parameter upmask1 bound to: 125'b00000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter upmask2 bound to: 125'b00000000001111100000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter downmask1 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000000000000000000 
+	Parameter downmask2 bound to: 125'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000001111100000000000000000000111110000000000 
+	Parameter mask_1 bound to: 125'b00000000001111100000000000000000000111110000000000111111111111111111111111100000000001111100000000000000000000111110000000000 
+INFO: [Synth 8-638] synthesizing module 'transform' [C:/Xilinx/ISE/bubble_4/transform.v:21]
+INFO: [Synth 8-256] done synthesizing module 'transform' (4#1) [C:/Xilinx/ISE/bubble_4/transform.v:21]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:261]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:261]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:262]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:262]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:263]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:263]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:264]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:264]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:267]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:268]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:269]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:270]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:277]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:277]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:278]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:278]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:279]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:279]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:280]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:280]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:283]
+WARNING: [Synth 8-689] width (32) of port connection 'y' does not match port width (9) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:284]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:285]
+WARNING: [Synth 8-689] width (32) of port connection 'x' does not match port width (10) of module 'transform' [C:/Xilinx/ISE/bubble_4/calc.v:286]
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_map_reg' and it is trimmed from '1040' to '870' bits. [C:/Xilinx/ISE/bubble_4/calc.v:760]
+WARNING: [Synth 8-5788] Register player1_x_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:172]
+WARNING: [Synth 8-5788] Register player1_y_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:173]
+WARNING: [Synth 8-5788] Register player2_x_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:189]
+WARNING: [Synth 8-5788] Register player2_y_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:190]
+WARNING: [Synth 8-5788] Register raw_map_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:389]
+WARNING: [Synth 8-5788] Register item_box_i_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:438]
+WARNING: [Synth 8-5788] Register item_box_j_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:439]
+WARNING: [Synth 8-5788] Register bubble_map_up_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_up_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_down_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_down_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_left_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_left_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_right_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_map_right_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:599]
+WARNING: [Synth 8-5788] Register bubble_mask_up_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_up_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_down_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_down_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_left_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_left_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_right_reg[5] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register bubble_mask_right_reg[4] in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:600]
+WARNING: [Synth 8-5788] Register tmp_map_reg in module calc is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Xilinx/ISE/bubble_4/calc.v:760]
+WARNING: [Synth 8-3848] Net bubble_i[5] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:366]
+WARNING: [Synth 8-3848] Net bubble_i[4] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:366]
+WARNING: [Synth 8-3848] Net corner_map[5] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:518]
+WARNING: [Synth 8-3848] Net corner_map[4] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:518]
+WARNING: [Synth 8-3848] Net bubble_time[5] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:365]
+WARNING: [Synth 8-3848] Net bubble_time[4] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:365]
+WARNING: [Synth 8-3848] Net bubble_j[5] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:367]
+WARNING: [Synth 8-3848] Net bubble_j[4] in module/entity calc does not have driver. [C:/Xilinx/ISE/bubble_4/calc.v:367]
+INFO: [Synth 8-256] done synthesizing module 'calc' (5#1) [C:/Xilinx/ISE/bubble_4/calc.v:21]
+INFO: [Synth 8-638] synthesizing module 'display_vga' [C:/Xilinx/ISE/bubble_4/display_vga.v:21]
+	Parameter transparent bound to: 12'b101010000101 
+INFO: [Synth 8-638] synthesizing module 'grid_img' [C:/Xilinx/ISE/bubble_4/grid_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_grid_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_grid_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_grid_img' (6#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_grid_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (17) of module 'ic_grid_img' [C:/Xilinx/ISE/bubble_4/grid_img.v:30]
+INFO: [Synth 8-256] done synthesizing module 'grid_img' (7#1) [C:/Xilinx/ISE/bubble_4/grid_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'players_img' [C:/Xilinx/ISE/bubble_4/players_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_players_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_players_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_players_img' (8#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_players_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (17) of module 'ic_players_img' [C:/Xilinx/ISE/bubble_4/players_img.v:32]
+INFO: [Synth 8-256] done synthesizing module 'players_img' (9#1) [C:/Xilinx/ISE/bubble_4/players_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'map_img' [C:/Xilinx/ISE/bubble_4/map_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_map_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_map_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_map_img' (10#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_map_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (18) of module 'ic_map_img' [C:/Xilinx/ISE/bubble_4/map_img.v:29]
+INFO: [Synth 8-256] done synthesizing module 'map_img' (11#1) [C:/Xilinx/ISE/bubble_4/map_img.v:21]
+WARNING: [Synth 8-689] width (9) of port connection 'y' does not match port width (11) of module 'map_img' [C:/Xilinx/ISE/bubble_4/display_vga.v:213]
+INFO: [Synth 8-638] synthesizing module 'win_img' [C:/Xilinx/ISE/bubble_4/win_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_win0_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_win0_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_win0_img' (12#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_win0_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (13) of module 'ic_win0_img' [C:/Xilinx/ISE/bubble_4/win_img.v:31]
+INFO: [Synth 8-638] synthesizing module 'ic_win1_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_win1_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_win1_img' (13#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_win1_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (13) of module 'ic_win1_img' [C:/Xilinx/ISE/bubble_4/win_img.v:32]
+INFO: [Synth 8-256] done synthesizing module 'win_img' (14#1) [C:/Xilinx/ISE/bubble_4/win_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'about_img' [C:/Xilinx/ISE/bubble_4/about_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_about_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_about_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_about_img' (15#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_about_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'ic_about_img' [C:/Xilinx/ISE/bubble_4/about_img.v:29]
+INFO: [Synth 8-256] done synthesizing module 'about_img' (16#1) [C:/Xilinx/ISE/bubble_4/about_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'help_img' [C:/Xilinx/ISE/bubble_4/help_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_help_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_help_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_help_img' (17#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_help_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'ic_help_img' [C:/Xilinx/ISE/bubble_4/help_img.v:29]
+INFO: [Synth 8-256] done synthesizing module 'help_img' (18#1) [C:/Xilinx/ISE/bubble_4/help_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'logo_img' [C:/Xilinx/ISE/bubble_4/logo_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_logo_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_logo_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_logo_img' (19#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_logo_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'ic_logo_img' [C:/Xilinx/ISE/bubble_4/logo_img.v:29]
+INFO: [Synth 8-256] done synthesizing module 'logo_img' (20#1) [C:/Xilinx/ISE/bubble_4/logo_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'menu_img' [C:/Xilinx/ISE/bubble_4/menu_img.v:21]
+INFO: [Synth 8-638] synthesizing module 'ic_menu_img' [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_menu_img_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ic_menu_img' (21#1) [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/realtime/ic_menu_img_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (16) of module 'ic_menu_img' [C:/Xilinx/ISE/bubble_4/menu_img.v:29]
+INFO: [Synth 8-256] done synthesizing module 'menu_img' (22#1) [C:/Xilinx/ISE/bubble_4/menu_img.v:21]
+INFO: [Synth 8-256] done synthesizing module 'display_vga' (23#1) [C:/Xilinx/ISE/bubble_4/display_vga.v:21]
+INFO: [Synth 8-638] synthesizing module 'seg7_device' [C:/Xilinx/ISE/bubble_4/seg7_device.v:21]
+INFO: [Synth 8-638] synthesizing module 'Seg7Device' [C:/Xilinx/ISE/bubble_4/Seg7Device.v:21]
+INFO: [Synth 8-638] synthesizing module 'Seg7Decode' [C:/Xilinx/ISE/bubble_4/Seg7Decode.v:21]
+INFO: [Synth 8-638] synthesizing module 'SegmentDecoder' [C:/Xilinx/ISE/bubble_4/SegmentDecoder.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SegmentDecoder' (24#1) [C:/Xilinx/ISE/bubble_4/SegmentDecoder.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Seg7Decode' (25#1) [C:/Xilinx/ISE/bubble_4/Seg7Decode.v:21]
+INFO: [Synth 8-638] synthesizing module 'Seg7Remap' [C:/Xilinx/ISE/bubble_4/Seg7Remap.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Seg7Remap' (26#1) [C:/Xilinx/ISE/bubble_4/Seg7Remap.v:21]
+INFO: [Synth 8-638] synthesizing module 'ShiftReg' [C:/Xilinx/ISE/bubble_4/ShiftReg.v:21]
+	Parameter WIDTH bound to: 64 - type: integer 
+	Parameter DELAY bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ShiftReg' (27#1) [C:/Xilinx/ISE/bubble_4/ShiftReg.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Seg7Device' (28#1) [C:/Xilinx/ISE/bubble_4/Seg7Device.v:21]
+WARNING: [Synth 8-350] instance 'm0' of module 'Seg7Device' requires 9 connections, but only 7 given [C:/Xilinx/ISE/bubble_4/seg7_device.v:39]
+INFO: [Synth 8-256] done synthesizing module 'seg7_device' (29#1) [C:/Xilinx/ISE/bubble_4/seg7_device.v:21]
+INFO: [Synth 8-256] done synthesizing module 'top' (30#1) [C:/Xilinx/ISE/bubble_4/top.v:24]
+WARNING: [Synth 8-3917] design top has port Buzzer driven by constant 1
+WARNING: [Synth 8-3917] design top has port AUD_SD driven by constant 1
+WARNING: [Synth 8-3331] design ps2_keyboard has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 425.586 ; gain = 215.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 425.586 ; gain = 215.473
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_about_img' instantiated as 'u_display_vga/mlayer2/u_ic_about_img' [C:/Xilinx/ISE/bubble_4/about_img.v:29]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'ic_grid_img' instantiated as 'u_display_vga/layer1/u_ic_grid_img'. 2 instances of this cell are unresolved black boxes. [C:/Xilinx/ISE/bubble_4/grid_img.v:30]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_help_img' instantiated as 'u_display_vga/mlayer3/u_ic_help_img' [C:/Xilinx/ISE/bubble_4/help_img.v:29]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_logo_img' instantiated as 'u_display_vga/mlayer5/u_ic_logo_img' [C:/Xilinx/ISE/bubble_4/logo_img.v:29]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_map_img' instantiated as 'u_display_vga/layer4/u_ic_map_img' [C:/Xilinx/ISE/bubble_4/map_img.v:29]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_menu_img' instantiated as 'u_display_vga/mlayer1/u_ic_menu_img' [C:/Xilinx/ISE/bubble_4/menu_img.v:29]
+WARNING: [Project 1-560] Could not resolve non-primitive black box cell 'ic_players_img' instantiated as 'u_display_vga/layer2_0/u_ic_players_img'. 2 instances of this cell are unresolved black boxes. [C:/Xilinx/ISE/bubble_4/players_img.v:32]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_win0_img' instantiated as 'u_display_vga/layer5_0/u_ic_win0_img' [C:/Xilinx/ISE/bubble_4/win_img.v:31]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ic_win1_img' instantiated as 'u_display_vga/layer5_0/u_ic_win1_img' [C:/Xilinx/ISE/bubble_4/win_img.v:32]
+INFO: [Device 21-403] Loading part xc7k160tffg676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp/ic_win0_img_in_context.xdc] for cell 'u_display_vga/layer5_0/u_ic_win0_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp/ic_win0_img_in_context.xdc] for cell 'u_display_vga/layer5_0/u_ic_win0_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_2/ic_win1_img_in_context.xdc] for cell 'u_display_vga/layer5_0/u_ic_win1_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_2/ic_win1_img_in_context.xdc] for cell 'u_display_vga/layer5_0/u_ic_win1_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_3/ic_about_img_in_context.xdc] for cell 'u_display_vga/mlayer2/u_ic_about_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_3/ic_about_img_in_context.xdc] for cell 'u_display_vga/mlayer2/u_ic_about_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_4/ic_logo_img_in_context.xdc] for cell 'u_display_vga/mlayer5/u_ic_logo_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_4/ic_logo_img_in_context.xdc] for cell 'u_display_vga/mlayer5/u_ic_logo_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_5/ic_grid_img_in_context.xdc] for cell 'u_display_vga/layer1/u_ic_grid_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_5/ic_grid_img_in_context.xdc] for cell 'u_display_vga/layer1/u_ic_grid_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_5/ic_grid_img_in_context.xdc] for cell 'u_display_vga/layer3/u_ic_grid_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_5/ic_grid_img_in_context.xdc] for cell 'u_display_vga/layer3/u_ic_grid_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_6/ic_help_img_in_context.xdc] for cell 'u_display_vga/mlayer3/u_ic_help_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_6/ic_help_img_in_context.xdc] for cell 'u_display_vga/mlayer3/u_ic_help_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_7/ic_map_img_in_context.xdc] for cell 'u_display_vga/layer4/u_ic_map_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_7/ic_map_img_in_context.xdc] for cell 'u_display_vga/layer4/u_ic_map_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_8/ic_menu_img_in_context.xdc] for cell 'u_display_vga/mlayer1/u_ic_menu_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_8/ic_menu_img_in_context.xdc] for cell 'u_display_vga/mlayer1/u_ic_menu_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_9/ic_players_img_in_context.xdc] for cell 'u_display_vga/layer2_0/u_ic_players_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_9/ic_players_img_in_context.xdc] for cell 'u_display_vga/layer2_0/u_ic_players_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_9/ic_players_img_in_context.xdc] for cell 'u_display_vga/layer2_1/u_ic_players_img'
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/.Xil/Vivado-10612-DESKTOP-L92UD1G/dcp_9/ic_players_img_in_context.xdc] for cell 'u_display_vga/layer2_1/u_ic_players_img'
+Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc:43]
+Finished Parsing XDC File [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/ISE/bubble_4/bubble_4.srcs/constrs_1/new/pinout.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 841.961 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 847.203 ; gain = 637.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 847.203 ; gain = 637.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 847.203 ; gain = 637.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "clk_6MHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clk_4Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Buzzer_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "a_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "d_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ctrl_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "i_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "j_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "k_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "l_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enter_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "key_release" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[5]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[4]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[3]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[2]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[1]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bubble_map_up_reg[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "bubble_map_down" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_left" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_right" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_down" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_left" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_right" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "player1_nexty2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player2_nexty2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "speed1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "speed2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "up_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "down_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "right_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boom_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "player_no" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player_no" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curdown" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "player_no" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player_no" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "curdown" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'player1_move_reg' [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:122]
+WARNING: [Synth 8-327] inferring latch for variable 'player2_move_reg' [C:/Xilinx/ISE/bubble_4/ps2_keyboard.v:131]
+WARNING: [Synth 8-327] inferring latch for variable 'player_no_reg' [C:/Xilinx/ISE/bubble_4/display_vga.v:182]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:36 ; elapsed = 00:01:39 . Memory (MB): peak = 847.203 ; gain = 637.090
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |calc__GB0     |           1|     52652|
+|2     |calc__GB1     |           1|      6316|
+|3     |calc__GB2     |           1|      6316|
+|4     |calc__GB3     |           1|      6314|
+|5     |calc__GB4     |           1|      9471|
+|6     |calc__GB5     |           1|     38766|
+|7     |calc__GB6     |           1|     28574|
+|8     |calc__GB7     |           1|     29908|
+|9     |calc__GB8     |           1|     31520|
+|10    |calc__GB9     |           1|     39017|
+|11    |calc__GB10    |           1|     28975|
+|12    |calc__GB11    |           1|     15566|
+|13    |calc__GB12    |           1|     13020|
+|14    |calc__GB13    |           1|     22284|
+|15    |calc__GB14    |           1|     22284|
+|16    |calc__GB15    |           1|     15300|
+|17    |calc__GB16    |           1|     44371|
+|18    |calc__GB17    |           1|     22314|
+|19    |calc__GB18    |           1|     21247|
+|20    |calc__GB19    |           1|     27936|
+|21    |calc__GB20    |           1|     26065|
+|22    |calc__GB21    |           1|     13008|
+|23    |calc__GB22    |           1|     13208|
+|24    |top__GC0      |           1|     12960|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register raw_map_reg [C:/Xilinx/ISE/bubble_4/calc.v:389]
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 30    
+	   3 Input     32 Bit       Adders := 18    
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 16    
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 8     
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 24    
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	             1040 Bit    Registers := 1     
+	              870 Bit    Registers := 1     
+	              125 Bit    Registers := 56    
+	               65 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               24 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 22    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	                 3x32  Multipliers := 26    
+	                 6x32  Multipliers := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input   1040 Bit        Muxes := 8     
+	   2 Input    870 Bit        Muxes := 2     
+	   2 Input    125 Bit        Muxes := 16    
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     62 Bit        Muxes := 4     
+	   3 Input     61 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
+	  13 Input     16 Bit        Muxes := 21    
+	   2 Input     14 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 21    
+	   2 Input     12 Bit        Muxes := 29    
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 10    
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 22    
+	   2 Input      1 Bit        Muxes := 149   
+	   4 Input      1 Bit        Muxes := 65    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	 301 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3538] Detected potentially large (wide) register raw_map_reg [C:/Xilinx/ISE/bubble_4/calc.v:389]
+Hierarchical RTL Component report 
+Module transform__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__17 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__18 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__19 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module transform__20 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module calc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 27    
+	   3 Input     32 Bit       Adders := 17    
+	   2 Input     13 Bit       Adders := 16    
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 16    
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	             1040 Bit    Registers := 1     
+	              870 Bit    Registers := 1     
+	              125 Bit    Registers := 56    
+	               32 Bit    Registers := 4     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                 3x32  Multipliers := 25    
++---Muxes : 
+	   2 Input   1040 Bit        Muxes := 8     
+	   2 Input    870 Bit        Muxes := 2     
+	   2 Input    125 Bit        Muxes := 16    
+	   2 Input     62 Bit        Muxes := 4     
+	   3 Input     61 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 10    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 8     
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 105   
+	   4 Input      1 Bit        Muxes := 63    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
+Module music_player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 2     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	 301 Input      1 Bit        Muxes := 1     
+Module ps2_keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 30    
+Module transform 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input     16 Bit        Muxes := 1     
+	  10 Input     13 Bit        Muxes := 1     
+Module players_img__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+Module players_img 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+Module win_img 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module display_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 8     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 11    
+	   2 Input      7 Bit       Adders := 2     
+	   3 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 3     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                 6x32  Multipliers := 2     
+	                 3x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 28    
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 1     
+Module ShiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               65 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Seg7Device 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+Module seg7_device 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+CRITICAL WARNING: [Synth 8-5739] parallel_synth_helper process has died or is not responding; trying to continue with regular parallel flow
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top has port Buzzer driven by constant 1
+WARNING: [Synth 8-3917] design top has port AUD_SD driven by constant 1
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[31] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[30] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[29] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[28] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[27] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[26] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[25] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[24] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[23] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[22] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[21] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[20] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[19] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[18] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[17] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[16] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[15] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[14] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map4[13] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[31] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[30] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[29] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[28] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[27] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[26] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[25] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[24] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[23] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[22] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[21] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[20] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[19] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[18] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[17] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[16] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[15] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[14] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map5[13] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[31] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[30] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[29] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[28] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[27] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[26] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[25] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[24] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[23] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[22] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[21] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[20] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[19] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[18] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[17] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[16] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[15] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[14] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map6[13] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[31] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[30] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[29] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[28] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[27] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[26] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[25] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[24] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[23] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[22] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[21] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[20] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[19] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[18] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[17] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[16] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[15] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[14] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB7 has port raw_map7[13] driven by constant 0
+INFO: [Synth 8-5545] ROM "bubble_map_right" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_left" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_map_down" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_right" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_left" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_down" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "right_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "left_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "down_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "up_box_i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_mask_middle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][0]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][1]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][2]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][3]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][4]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][5]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][6]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][7]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][8]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][9]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][10]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][11]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][12]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][13]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][14]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][15]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][16]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][17]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][18]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][19]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][20]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][21]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][22]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][23]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][24]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][25]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][26]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][27]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][28]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][29]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][30]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][31]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][32]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][33]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][34]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_down_reg[3][35]' (FDCE) to 'bubble_mask_down_reg[3][39]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][35]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_down_reg[3][36]' (FDCE) to 'bubble_mask_down_reg[3][39]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][36]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_down_reg[3][37]' (FDCE) to 'bubble_mask_down_reg[3][39]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][37]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_down_reg[3][38]' (FDCE) to 'bubble_mask_down_reg[3][39]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][38]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][39]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][40]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][41]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][42]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][43]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][44]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][45]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][46]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][47]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][48]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][49]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][50]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][51]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][52]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][53]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][54]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_right_reg[3][55]' (FDCE) to 'bubble_mask_right_reg[3][59]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][55]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_right_reg[3][56]' (FDCE) to 'bubble_mask_right_reg[3][59]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][56]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_right_reg[3][57]' (FDCE) to 'bubble_mask_right_reg[3][59]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][57]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_right_reg[3][58]' (FDCE) to 'bubble_mask_right_reg[3][59]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][58]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][59]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][60]' (FDCE) to 'bubble_mask_middle_reg[3][64]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][61]' (FDCE) to 'bubble_mask_middle_reg[3][64]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][62]' (FDCE) to 'bubble_mask_middle_reg[3][64]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][63]' (FDCE) to 'bubble_mask_middle_reg[3][64]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_left_reg[3][65]' (FDCE) to 'bubble_mask_left_reg[3][69]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][65]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_left_reg[3][66]' (FDCE) to 'bubble_mask_left_reg[3][69]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][66]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_left_reg[3][67]' (FDCE) to 'bubble_mask_left_reg[3][69]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][67]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_left_reg[3][68]' (FDCE) to 'bubble_mask_left_reg[3][69]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][68]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][69]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][70]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][71]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][72]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][73]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][74]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][75]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][76]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][77]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][78]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][79]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][80]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][81]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][82]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][83]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][84]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][85]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][86]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][87]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Synth 8-3886] merging instance 'bubble_mask_middle_reg[3][88]' (FDCE) to 'bubble_mask_middle_reg[3][124]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_mask_middle_reg[3][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_mask_middle_reg[2][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_mask_middle_reg[1][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_mask_middle_reg[0][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_map_middle_reg[3][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_map_middle_reg[2][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_map_middle_reg[1][124] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bubble_map_middle_reg[0][124] )
+INFO: [Synth 8-5544] ROM "player1_nexty2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "player2_nexty2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "bubble_mask_up" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boomed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finish_id" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "bubble_time" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design calc__GB20 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design calc__GB20 has port P[0] driven by constant 0
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Xilinx/ISE/bubble_4/win_img.v:30]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Xilinx/ISE/bubble_4/menu_img.v:31]
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP layer1/pos0, operation Mode is: (A:0x30)*B.
+DSP Report: operator layer1/pos0 is absorbed into DSP layer1/pos0.
+DSP Report: Generating DSP layer1/pos, operation Mode is: PCIN+(A:0x600)*B.
+DSP Report: operator layer1/pos is absorbed into DSP layer1/pos.
+DSP Report: operator layer1/pos1 is absorbed into DSP layer1/pos.
+DSP Report: Generating DSP layer2_0/pos2, operation Mode is: (A:0x30)*B.
+DSP Report: operator layer2_0/pos2 is absorbed into DSP layer2_0/pos2.
+DSP Report: Generating DSP layer2_0/pos0, operation Mode is: PCIN+(D+A)*(B:0x330).
+DSP Report: operator layer2_0/pos0 is absorbed into DSP layer2_0/pos0.
+DSP Report: operator layer2_0/pos2 is absorbed into DSP layer2_0/pos0.
+DSP Report: operator layer2_0/pos3 is absorbed into DSP layer2_0/pos0.
+DSP Report: Generating DSP layer2_0/pos2, operation Mode is: (D+A)*(B:0x330).
+DSP Report: operator layer2_0/pos2 is absorbed into DSP layer2_0/pos2.
+DSP Report: operator layer2_0/pos3 is absorbed into DSP layer2_0/pos2.
+DSP Report: Generating DSP layer2_0/pos0, operation Mode is: PCIN+(A:0x0):B+(C:0x300).
+DSP Report: operator layer2_0/pos0 is absorbed into DSP layer2_0/pos0.
+DSP Report: Generating DSP layer2_1/pos2, operation Mode is: (A:0x30)*B.
+DSP Report: operator layer2_1/pos2 is absorbed into DSP layer2_1/pos2.
+DSP Report: Generating DSP layer2_1/pos0, operation Mode is: PCIN+(D+A)*(B:0x330).
+DSP Report: operator layer2_1/pos0 is absorbed into DSP layer2_1/pos0.
+DSP Report: operator layer2_1/pos2 is absorbed into DSP layer2_1/pos0.
+DSP Report: operator layer2_1/pos3 is absorbed into DSP layer2_1/pos0.
+DSP Report: Generating DSP layer2_1/pos2, operation Mode is: (D+A)*(B:0x330).
+DSP Report: operator layer2_1/pos2 is absorbed into DSP layer2_1/pos2.
+DSP Report: operator layer2_1/pos3 is absorbed into DSP layer2_1/pos2.
+DSP Report: Generating DSP layer2_1/pos0, operation Mode is: PCIN+(A:0x0):B+(C:0x300).
+DSP Report: operator layer2_1/pos0 is absorbed into DSP layer2_1/pos0.
+DSP Report: Generating DSP layer3/pos0, operation Mode is: (A:0x30)*B2.
+DSP Report: register cur_reg is absorbed into DSP layer3/pos0.
+DSP Report: operator layer3/pos0 is absorbed into DSP layer3/pos0.
+DSP Report: Generating DSP layer3/pos, operation Mode is: PCIN+(A:0x600)*B.
+DSP Report: operator layer3/pos is absorbed into DSP layer3/pos.
+DSP Report: operator layer3/pos1 is absorbed into DSP layer3/pos.
+DSP Report: Generating DSP layer4/pos, operation Mode is: C+(A:0x240)*B.
+DSP Report: operator layer4/pos is absorbed into DSP layer4/pos.
+DSP Report: operator layer4/pos0 is absorbed into DSP layer4/pos.
+INFO: [Synth 8-5546] ROM "u_music_player/clk_4Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_music_player/clk_6MHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_music_player/Buzzer_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/a_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/s_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/d_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/w_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/j_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/k_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/l_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/i_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/ctrl_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/enter_press" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_ps2_keyboard/key_release" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top__GC0 has port SEGLED_CLR driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:27 ; elapsed = 00:04:52 . Memory (MB): peak = 1182.098 ; gain = 971.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------+-------------+---------------+----------------+
+|Module Name  | RTL Object  | Depth x Width | Implemented As | 
++-------------+-------------+---------------+----------------+
+|music_player | len_reg_rep | 512x5         | Block RAM      | 
+|music_player | origin      | 32x14         | LUT            | 
++-------------+-------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|grid_img    | (A:0x30)*B               | 5      | 6      | -      | -      | 11     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|grid_img    | PCIN+(A:0x600)*B         | 11     | 7      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|players_img | (A:0x30)*B               | 4      | 6      | -      | -      | 10     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|players_img | PCIN+(D+A)*(B:0x330)     | 8      | 10     | -      | 7      | 17     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|players_img | (D+A)*(B:0x330)          | 8      | 10     | -      | 7      | 19     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|display_vga | PCIN+(A:0x0):B+(C:0x300) | 30     | 6      | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|players_img | (A:0x30)*B               | 4      | 6      | -      | -      | 10     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|players_img | PCIN+(D+A)*(B:0x330)     | 8      | 10     | -      | 7      | 17     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|players_img | (D+A)*(B:0x330)          | 8      | 10     | -      | 7      | 19     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|display_vga | PCIN+(A:0x0):B+(C:0x300) | 30     | 6      | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|display_vga | (A:0x30)*B2              | 5      | 6      | -      | -      | 11     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|grid_img    | PCIN+(A:0x600)*B         | 11     | 7      | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|map_img     | C+(A:0x240)*B            | 9      | 10     | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |calc__GB0     |           1|     36272|
+|2     |calc__GB1     |           1|      6316|
+|3     |calc__GB2     |           1|      6316|
+|4     |calc__GB3     |           1|      6314|
+|5     |calc__GB4     |           1|      9471|
+|6     |calc__GB5     |           1|     38766|
+|7     |calc__GB6     |           1|     28451|
+|8     |calc__GB7     |           1|     20214|
+|9     |calc__GB8     |           1|     20880|
+|10    |calc__GB9     |           1|     14748|
+|11    |calc__GB10    |           1|     10139|
+|12    |calc__GB11    |           1|      9277|
+|13    |calc__GB12    |           1|        40|
+|14    |calc__GB13    |           1|     16877|
+|15    |calc__GB14    |           1|     16877|
+|16    |calc__GB15    |           1|     15300|
+|17    |calc__GB16    |           1|     13990|
+|18    |calc__GB17    |           1|      4070|
+|19    |calc__GB18    |           1|      3866|
+|20    |calc__GB19    |           1|      4844|
+|21    |calc__GB20    |           1|      5743|
+|22    |calc__GB21    |           1|        29|
+|23    |calc__GB22    |           1|        58|
+|24    |top__GC0      |           1|      6660|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:47 ; elapsed = 00:05:12 . Memory (MB): peak = 1397.754 ; gain = 1187.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[170]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[172]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[178]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[180]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[182]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[188]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[190]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[192]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[193]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[198]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[202]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[203]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[205]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[207]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[208]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[212]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[213]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[215]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[217]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[218]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[222]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[223]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[225]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[227]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[228]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[252]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[253]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[255]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[257]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[258]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[262]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[263]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[265]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[267]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[268]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[270]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[271]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[273]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[275]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[276]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[277]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[278]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[279]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[280]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[281]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[283]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[285]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[286]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[288]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[291]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[292]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[294]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[295]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[296]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[298]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[301]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[302]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[304]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[308]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[330]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[332]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[335]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[336]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[338]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[340]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[342]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[344]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[345]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[346]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[348]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[350]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[351]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[353]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[355]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[356]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[358]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[360]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[361]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[362]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[363]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[364]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[365]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[366]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[368]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[370]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[372]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[373]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[377]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[378]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[380]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[382]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_calci_0/\tmp_map_reg[383]_LDC )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:28 ; elapsed = 00:05:54 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |calc__GB0     |           1|     33734|
+|2     |calc__GB1     |           1|      4908|
+|3     |calc__GB2     |           1|      4908|
+|4     |calc__GB3     |           1|      4906|
+|5     |calc__GB4     |           1|      7359|
+|6     |calc__GB5     |           1|     29706|
+|7     |calc__GB6     |           1|     22115|
+|8     |calc__GB7     |           1|     15989|
+|9     |calc__GB8     |           1|     17384|
+|10    |calc__GB9     |           1|     14290|
+|11    |calc__GB10    |           1|     10139|
+|12    |calc__GB11    |           1|      9258|
+|13    |calc__GB12    |           1|        40|
+|14    |calc__GB13    |           1|     11741|
+|15    |calc__GB14    |           1|     11741|
+|16    |calc__GB15    |           1|     10180|
+|17    |calc__GB16    |           1|     13990|
+|18    |calc__GB17    |           1|      4070|
+|19    |calc__GB18    |           1|      3833|
+|20    |calc__GB19    |           1|      4780|
+|21    |calc__GB20    |           1|      5743|
+|22    |calc__GB21    |           1|        29|
+|23    |calc__GB22    |           1|        53|
+|24    |top__GC0      |           1|      6660|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Xilinx/ISE/bubble_4/calc.v:125]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Xilinx/ISE/bubble_4/calc.v:126]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:48 ; elapsed = 00:07:23 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |calc__GB0     |           1|     10182|
+|2     |calc__GB5     |           1|     10104|
+|3     |calc__GB6     |           1|      7445|
+|4     |calc__GB7     |           1|      5980|
+|5     |calc__GB8     |           1|      6756|
+|6     |calc__GB9     |           1|      5262|
+|7     |calc__GB10    |           1|      4492|
+|8     |calc__GB13    |           1|      6709|
+|9     |calc__GB14    |           1|      1137|
+|10    |calc__GB15    |           1|         0|
+|11    |calc__GB16    |           1|       796|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Xilinx/ISE/bubble_4/calc.v:125]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Xilinx/ISE/bubble_4/calc.v:126]
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:07:05 ; elapsed = 00:07:41 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:07:06 ; elapsed = 00:07:41 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:07:12 ; elapsed = 00:07:48 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:07:13 ; elapsed = 00:07:48 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:07:53 ; elapsed = 00:08:28 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:07:53 ; elapsed = 00:08:28 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |ic_grid_img    |         2|
+|2     |ic_players_img |         2|
+|3     |ic_map_img     |         1|
+|4     |ic_win0_img    |         1|
+|5     |ic_win1_img    |         1|
+|6     |ic_menu_img    |         1|
+|7     |ic_about_img   |         1|
+|8     |ic_help_img    |         1|
+|9     |ic_logo_img    |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |ic_about_img      |     1|
+|2     |ic_grid_img       |     1|
+|3     |ic_grid_img__2    |     1|
+|4     |ic_help_img       |     1|
+|5     |ic_logo_img       |     1|
+|6     |ic_map_img        |     1|
+|7     |ic_menu_img       |     1|
+|8     |ic_players_img    |     1|
+|9     |ic_players_img__2 |     1|
+|10    |ic_win0_img       |     1|
+|11    |ic_win1_img       |     1|
+|12    |BUFG              |    10|
+|13    |CARRY4            |   601|
+|14    |DSP48E1           |     5|
+|15    |DSP48E1_1         |     4|
+|16    |DSP48E1_2         |     2|
+|17    |DSP48E1_3         |     1|
+|18    |DSP48E1_4         |     1|
+|19    |LUT1              |   685|
+|20    |LUT2              |  2966|
+|21    |LUT3              |  4934|
+|22    |LUT4              |  6614|
+|23    |LUT5              |  9569|
+|24    |LUT6              | 36767|
+|25    |MUXF7             |  4465|
+|26    |MUXF8             |  1788|
+|27    |RAMB18E1          |     1|
+|28    |XORCY             |     4|
+|29    |FDCE              |  1503|
+|30    |FDPE              |   786|
+|31    |FDRE              |   299|
+|32    |FDSE              |    21|
+|33    |LD                |     4|
+|34    |LDC               |   479|
+|35    |IBUF              |     9|
+|36    |OBUF              |    21|
++------+------------------+------+
+
+Report Instance Areas: 
++------+-----------------+--------------+------+
+|      |Instance         |Module        |Cells |
++------+-----------------+--------------+------+
+|1     |top              |              | 71671|
+|2     |  u_calc         |calc          | 69012|
+|3     |  u_display_vga  |display_vga   |  1624|
+|4     |    layer1       |grid_img      |    88|
+|5     |    layer2_0     |players_img   |    91|
+|6     |    layer2_1     |players_img_0 |    93|
+|7     |    layer3       |grid_img_1    |   216|
+|8     |    layer4       |map_img       |    41|
+|9     |    layer5_0     |win_img       |   122|
+|10    |    mlayer1      |menu_img      |   155|
+|11    |    mlayer2      |about_img     |    90|
+|12    |    mlayer3      |help_img      |   101|
+|13    |    mlayer5      |logo_img      |   142|
+|14    |  u_menu         |menu          |   300|
+|15    |  u_music_player |music_player  |   242|
+|16    |  u_ps2_keyboard |ps2_keyboard  |   123|
+|17    |  u_seg7_device  |seg7_device   |   134|
+|18    |    m0           |Seg7Device    |   125|
+|19    |      U2         |ShiftReg      |   125|
++------+-----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:07:53 ; elapsed = 00:08:28 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 84 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:28 ; elapsed = 00:08:09 . Memory (MB): peak = 1558.387 ; gain = 926.656
+Synthesis Optimization Complete : Time (s): cpu = 00:07:53 ; elapsed = 00:08:29 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1111 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'calc' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 487 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 4 instances
+  LD => LDCE: 4 instances
+  LDC => LDCE: 479 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+444 Infos, 171 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:08:07 ; elapsed = 00:08:41 . Memory (MB): peak = 1558.387 ; gain = 1348.273
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1558.387 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.328 . Memory (MB): peak = 1558.387 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 08 10:26:11 2017...

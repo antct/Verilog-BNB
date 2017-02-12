@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../SegmentDecoder.v"
+verilog xil_defaultlib  "../../../bubble_4.srcs/sources_1/ip/ic_win1_img/sim/ic_win1_img.v"
+verilog xil_defaultlib  "../../../bubble_4.srcs/sources_1/ip/ic_win0_img/sim/ic_win0_img.v"
+verilog xil_defaultlib  "../../../ShiftReg.v"
+verilog xil_defaultlib  "../../../Seg7Remap.v"
+verilog xil_defaultlib  "../../../Seg7Decode.v"
+verilog xil_defaultlib  "../../../bubble_4.srcs/sources_1/ip/ic_players_img/sim/ic_players_img.v"
+verilog xil_defaultlib  "../../../bubble_4.srcs/sources_1/ip/ic_map_img/sim/ic_map_img.v"
+verilog xil_defaultlib  "../../../bubble_4.srcs/sources_1/ip/ic_grid_img_1/sim/ic_grid_img.v"
+verilog xil_defaultlib  "../../../win_img.v"
+verilog xil_defaultlib  "../../../transform.v"
+verilog xil_defaultlib  "../../../Seg7Device.v"
+verilog xil_defaultlib  "../../../players_img.v"
+verilog xil_defaultlib  "../../../map_img.v"
+verilog xil_defaultlib  "../../../grid_img.v"
+verilog xil_defaultlib  "../../../seg7_device.v"
+verilog xil_defaultlib  "../../../ps2_keyboard.v"
+verilog xil_defaultlib  "../../../display_vga.v"
+verilog xil_defaultlib  "../../../calc.v"
+verilog xil_defaultlib  "../../../top.v"
+verilog xil_defaultlib  "../../../bubble_4.srcs/sim_1/new/top_sim1.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

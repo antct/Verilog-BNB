@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Jan 05 21:03:56 2017
+# Process ID: 14036
+# Current directory: C:/Xilinx/ISE/bubble_4/bubble_4.runs/ic_menu_img_synth_1
+# Command line: vivado.exe -log ic_menu_img.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ic_menu_img.tcl
+# Log file: C:/Xilinx/ISE/bubble_4/bubble_4.runs/ic_menu_img_synth_1/ic_menu_img.vds
+# Journal file: C:/Xilinx/ISE/bubble_4/bubble_4.runs/ic_menu_img_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ic_menu_img.tcl -notrace

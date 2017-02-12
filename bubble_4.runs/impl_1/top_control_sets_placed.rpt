@@ -1,0 +1,945 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Jan 08 10:31:30 2017
+| Host         : DESKTOP-L92UD1G running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   873 |
+| Unused register locations in slices containing registers |  5774 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             123 |           59 |
+| No           | No                    | Yes                    |            1881 |         1672 |
+| No           | Yes                   | No                     |             554 |          455 |
+| Yes          | No                    | No                     |              89 |           37 |
+| Yes          | No                    | Yes                    |             408 |          166 |
+| Yes          | Yes                   | No                     |              99 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+----------------------------------------+-----------------------------------------+------------------+----------------+
+|                   Clock Signal                  |              Enable Signal             |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-------------------------------------------------+----------------------------------------+-----------------------------------------+------------------+----------------+
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[746]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[666]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[666]_C               |                1 |              1 |
+|  u_music_player/clk_6MHz                        |                                        |                                         |                1 |              1 |
+|  u_calc/tmp_map_reg[669]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[669]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[672]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[672]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[674]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[674]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[677]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[677]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[679]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[679]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[682]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[682]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[687]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[687]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[689]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[689]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[453]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[450]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[457]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[459]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[460]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[463]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[465]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[466]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[467]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[469]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[491]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[492]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[494]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[496]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[499]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[501]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[503]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[506]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[509]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[512]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[514]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[516]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[517]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[518]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[519]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[520]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[522]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[523]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[524]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[527]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[529]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[530]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[531]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[534]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[536]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[539]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[540]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[541]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[544]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[546]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[547]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[549]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[570]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[571]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[574]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[579]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[589]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[592]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[594]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[597]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[599]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[602]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[604]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[607]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[609]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[614]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[624]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[625]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[626]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[629]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[651]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[654]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[655]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[656]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[659]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[661]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[664]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[665]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[666]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[669]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[672]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[674]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[677]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[679]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[682]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[687]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[689]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[690]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[691]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[694]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[696]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[698]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[700]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[701]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[704]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[706]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[708]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[709]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[730]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[731]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[732]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[734]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[735]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[736]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[738]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[742]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[744]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[745]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[846]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[748]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[752]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[754]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[762]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[764]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[767]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[769]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[771]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[774]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[775]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[776]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[779]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[781]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[784]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[785]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[786]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[789]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[810]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[811]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[814]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[815]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[816]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[819]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[820]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[821]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[824]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[825]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[826]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[829]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[831]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[834]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[835]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[836]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[837]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[839]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[840]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[841]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[844]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[846]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[849]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[850]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[851]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[852]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[854]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[856]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[690]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[690]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[858]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[859]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[860]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[861]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[862]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[864]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[866]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[691]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[691]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[868]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[869]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[694]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[694]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[696]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[696]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[698]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[698]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[700]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[700]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[701]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[701]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[732]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[734]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[735]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[736]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[738]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[742]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[744]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[745]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[746]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[748]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[752]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[754]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[762]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[764]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[767]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[769]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[771]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[774]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[775]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[776]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[779]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[781]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[784]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[785]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[786]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[789]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[810]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[811]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[814]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[815]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[816]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[819]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[820]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[821]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[824]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[825]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[826]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[829]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[831]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[834]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[835]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[836]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[837]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[839]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[840]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[841]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[844]_LDC_i_1_n_2     |                1 |              1 |
+|  u_calc/tmp_map_reg[704]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[704]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[849]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[850]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[851]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[852]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[854]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[856]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[858]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[859]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[860]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[861]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[862]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[864]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[866]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[868]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[869]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[171]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[173]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[174]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[175]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[176]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[177]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[179]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[181]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[183]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[184]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[185]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[186]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[187]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[189]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[191]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[194]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[195]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[196]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[197]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[199]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[200]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[201]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[204]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[206]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[209]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[210]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[211]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[214]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[216]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[219]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[220]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[220]_LDC_i_2_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[221]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[224]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[226]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[229]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[250]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[251]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[254]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[256]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[259]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[260]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[261]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[264]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[266]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[269]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[272]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[274]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[282]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[284]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[287]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[289]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[290]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[293]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[297]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[299]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[300]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[303]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[305]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[306]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[307]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[309]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[331]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[333]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[334]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[337]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[339]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[341]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[343]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[347]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[349]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[352]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[354]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[357]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[359]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[367]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[369]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[371]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[374]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[375]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[376]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[379]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[381]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[384]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[385]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[386]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[389]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[410]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[411]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[414]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[415]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[416]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[419]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[421]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[424]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[425]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[426]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[429]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[432]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[434]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[437]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[439]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[442]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[444]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[447]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[449]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[450]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[453]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[457]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[459]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[460]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[463]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[465]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[466]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[467]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[469]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[491]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[492]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[494]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[496]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[499]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[501]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[503]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[506]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[509]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[512]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[514]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[516]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[517]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[518]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[519]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[520]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[522]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[523]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[524]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[527]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[529]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[530]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[531]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[534]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[536]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[539]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[540]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[541]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[544]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[546]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[547]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[549]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[570]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[571]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[574]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[579]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[589]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[592]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[594]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[597]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[599]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[602]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[604]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[607]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[609]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[614]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[624]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[625]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[626]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[629]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[651]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[654]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[655]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[656]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[659]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[661]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[664]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[665]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[666]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[669]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[672]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[674]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[677]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[679]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[682]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[687]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[689]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[690]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[691]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[694]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[696]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[698]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[700]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[701]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[704]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[706]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[708]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[709]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[730]_LDC_i_1_n_2     |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calc/tmp_map_reg[731]_LDC_i_1_n_2     |                1 |              1 |
+|  u_calc/tmp_map_reg[706]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[706]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[708]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[708]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[709]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[709]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[730]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[730]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[731]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[731]_C               |                1 |              1 |
+|  clkdiv_reg[3]                                  |                                        |                                         |                1 |              1 |
+|  u_calc/tmp_map_reg[421]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[421]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[171]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[173]_C_0             |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[174]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[175]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[176]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[177]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[179]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[181]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[183]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[184]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[185]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[186]_C_0             |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[187]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[189]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[191]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[194]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[195]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[196]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[197]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[199]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[200]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[201]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[204]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[206]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[209]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[210]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[211]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[214]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[216]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[219]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[221]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[224]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[226]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[229]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[250]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[251]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[254]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[256]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[259]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[260]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[261]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[264]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[266]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[269]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[272]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[274]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[282]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[284]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[287]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[289]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[290]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[293]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[297]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[299]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[300]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[303]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[305]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[306]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[307]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[309]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[331]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[333]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[334]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[337]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[339]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[341]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[343]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[347]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[349]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[352]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[354]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[357]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[359]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[367]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[369]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[371]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[374]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[375]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[376]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[379]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[381]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[384]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[385]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[386]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[389]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[410]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[411]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[414]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[415]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[416]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[419]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[421]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[424]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[425]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[426]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[429]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[432]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[434]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[437]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[439]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[442]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[444]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[447]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[449]_C               |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[0][114]_i_1_n_2  | u_menu/bubble_mask_up_reg[3][89]        |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[1][114]_i_1_n_2  | u_menu/bubble_mask_up_reg[3][89]        |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[2][114]_i_1_n_2  | u_menu/bubble_mask_up_reg[3][89]        |                1 |              1 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[3][114]_i_1_n_2  | u_menu/bubble_mask_up_reg[3][89]        |                1 |              1 |
+| ~ps2_clk_IBUF_BUFG                              |                                        |                                         |                1 |              1 |
+|  u_calc/d_in_reg[6]                             |                                        | u_calc/d_in_reg[6]_0                    |                1 |              1 |
+|  u_calc/tmp_map_reg[732]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[732]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[734]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[734]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[735]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[735]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[736]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[736]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[738]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[738]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[742]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[742]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[744]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[744]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[745]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[745]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[746]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[746]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[748]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[748]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[752]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[752]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[754]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[754]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[762]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[762]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[764]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[764]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[767]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[767]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[769]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[769]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[771]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[771]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[774]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[774]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[775]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[775]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[776]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[776]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[779]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[779]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[781]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[781]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[784]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[784]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[785]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[785]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[786]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[786]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[789]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[789]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[810]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[810]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[811]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[811]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[814]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[814]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[815]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[815]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[816]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[816]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[819]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[819]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[820]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[820]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[821]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[821]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[824]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[824]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[825]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[825]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[826]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[826]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[829]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[829]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[831]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[831]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[834]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[834]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[835]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[835]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[836]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[836]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[837]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[837]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[839]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[839]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[840]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[840]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[841]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[841]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[844]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[844]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[846]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[846]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[849]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[849]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[850]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[850]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[851]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[851]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[852]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[852]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[854]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[854]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[856]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[856]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[858]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[858]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[859]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[859]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[860]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[860]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[861]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[861]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[862]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[862]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[864]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[864]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[866]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[866]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[868]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[868]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[869]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[869]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[171]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[171]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[173]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[173]_C_0             |                1 |              1 |
+|  u_calc/tmp_map_reg[174]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[174]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[175]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[175]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[176]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[176]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[177]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[177]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[179]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[179]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[181]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[181]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[183]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[183]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[184]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[184]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[185]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[185]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[186]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[186]_C_0             |                1 |              1 |
+|  u_calc/tmp_map_reg[187]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[187]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[189]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[189]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[191]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[191]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[194]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[194]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[195]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[195]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[196]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[196]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[197]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[197]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[199]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[199]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[200]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[200]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[201]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[201]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[204]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[204]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[206]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[206]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[209]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[209]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[210]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[210]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[211]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[211]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[214]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[214]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[216]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[216]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[219]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[219]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[220]_LDC_i_1_n_2            |                                        | u_calc/tmp_map_reg[220]_LDC_i_2_n_2     |                1 |              1 |
+|  u_calc/tmp_map_reg[221]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[221]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[224]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[224]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[226]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[226]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[229]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[229]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[250]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[250]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[251]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[251]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[254]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[254]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[256]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[256]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[259]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[259]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[260]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[260]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[261]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[261]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[264]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[264]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[266]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[266]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[269]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[269]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[272]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[272]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[274]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[274]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[282]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[282]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[284]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[284]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[287]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[287]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[289]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[289]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[290]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[290]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[293]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[293]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[297]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[297]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[299]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[299]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[300]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[300]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[303]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[303]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[305]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[305]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[306]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[306]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[307]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[307]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[309]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[309]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[331]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[331]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[333]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[333]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[334]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[334]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[337]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[337]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[339]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[339]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[341]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[341]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[343]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[343]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[347]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[347]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[349]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[349]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[352]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[352]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[354]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[354]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[357]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[357]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[359]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[359]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[367]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[367]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[369]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[369]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[371]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[371]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[374]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[374]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[375]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[375]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[376]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[376]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[379]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[379]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[381]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[381]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[384]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[384]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[385]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[385]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[386]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[386]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[389]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[389]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[410]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[410]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[411]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[411]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[414]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[414]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[415]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[415]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[416]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[416]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[419]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[419]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[424]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[424]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[425]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[425]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[426]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[426]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[429]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[429]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[432]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[432]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[434]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[434]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[437]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[437]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[439]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[439]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[442]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[442]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[444]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[444]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[447]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[447]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[449]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[449]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[450]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[450]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[453]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[453]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[457]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[457]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[459]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[459]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[460]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[460]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[463]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[463]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[465]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[465]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[466]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[466]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[467]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[467]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[469]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[469]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[491]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[491]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[492]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[492]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[494]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[494]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[496]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[496]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[499]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[499]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[501]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[501]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[503]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[503]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[506]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[506]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[509]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[509]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[512]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[512]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[514]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[514]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[516]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[516]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[517]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[517]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[518]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[518]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[519]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[519]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[520]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[520]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[522]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[522]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[523]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[523]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[524]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[524]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[527]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[527]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[529]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[529]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[530]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[530]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[531]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[531]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[534]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[534]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[536]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[536]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[539]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[539]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[540]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[540]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[541]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[541]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[544]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[544]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[546]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[546]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[547]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[547]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[549]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[549]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[570]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[570]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[571]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[571]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[574]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[574]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[579]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[579]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[589]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[589]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[592]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[592]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[594]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[594]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[597]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[597]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[599]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[599]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[602]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[602]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[604]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[604]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[607]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[607]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[609]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[609]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[614]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[614]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[624]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[624]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[625]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[625]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[626]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[626]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[629]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[629]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[651]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[651]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[654]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[654]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[655]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[655]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[656]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[656]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[659]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[659]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[661]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[661]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[664]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[664]_C               |                1 |              1 |
+|  u_calc/tmp_map_reg[665]_LDC_i_1_n_2            |                                        | u_menu/tmp_map_reg[665]_C               |                1 |              1 |
+|  u_ps2_keyboard/player2_move_inferred__0/i__n_2 |                                        |                                         |                1 |              2 |
+|  u_ps2_keyboard/E[0]                            |                                        |                                         |                1 |              2 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/speed1_reg[2][0]                 |                2 |              3 |
+|  p_0_in                                         | u_calc/bubble_j[3][3]_i_1_n_2          | u_menu/speed1_reg[2][1]                 |                4 |              4 |
+|  u_menu/player1_y_reg[2]_P                      |                                        | u_calcn_0_49083_BUFG                    |                4 |              4 |
+|  clkdiv_reg[3]                                  | u_seg7_device/m0/U2/shift[55]_i_1_n_2  | u_seg7_device/m0/U2/shift[22]_i_1_n_2   |                1 |              4 |
+|  u_calcn_0_49083_BUFG                           |                                        | u_menu/player1_y_reg[2]_P               |                4 |              4 |
+|  p_0_in                                         | u_calc/bubble_j[3][3]_i_1_n_2          | u_menu/speed1_reg[2][0]                 |                1 |              4 |
+|  p_0_in                                         | u_calc/bubble_j[2][3]_i_1_n_2          | u_menu/speed1_reg[2][0]                 |                2 |              4 |
+|  p_0_in                                         | u_calc/bubble_j[2][3]_i_1_n_2          | u_menu/speed1_reg[2][1]                 |                4 |              4 |
+|  p_0_in                                         | u_calc/bubble_j[1][3]_i_1_n_2          | u_menu/speed1_reg[2][1]                 |                1 |              4 |
+|  p_0_in                                         | u_calc/bubble_j[1][3]_i_1_n_2          | u_menu/speed1_reg[2][0]                 |                1 |              4 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[0][114]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                2 |              5 |
+|  p_0_in                                         | u_calc/bubble_time[2][31]_i_1_n_2      | u_menu/speed1_reg[2][0]                 |                2 |              5 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[1][114]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                2 |              5 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[3][114]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                2 |              5 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[2][114]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                2 |              5 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[4][114]_i_2_n_2  | u_calc/bubble_mask_up[4][114]_i_1_n_2   |                2 |              5 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_mask_up[5][114]_i_2_n_2  | u_calc/bubble_mask_up[5][114]_i_1_n_2   |                2 |              5 |
+|  clkdiv_reg_BUFG[0]                             | u_display_vga/curdown[4]_i_2_n_2       | u_display_vga/curdown                   |                2 |              5 |
+|  clk_IBUF_BUFG                                  |                                        |                                         |                3 |              7 |
+|  p_2_in                                         | u_calc/player1_x0                      | u_calcn_0_49083_BUFG                    |                4 |              8 |
+|  p_0_in                                         | u_calc/bubble_i[0][3]_i_1_n_2          | u_menu/speed1_reg[2][1]                 |                2 |              8 |
+|  u_music_player/clk_4Hz                         |                                        | u_music_player/len[8]_i_1_n_2           |                4 |              8 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/item_box_j[3]_i_1_n_2           |                                         |                5 |              8 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/left_box_i                      | u_menu/bubble_mask_up_reg[3][89]        |                4 |              8 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/right_box_i                     | u_menu/bubble_mask_up_reg[3][89]        |                4 |              8 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/up_box_i                        | u_menu/bubble_mask_up_reg[3][89]        |                4 |              8 |
+| ~ps2_clk_IBUF_BUFG                              | rstn_IBUF                              |                                         |                4 |              8 |
+|  p_2_in                                         | u_calc/player2_x0                      | u_menu/player1_y_reg[2]_P               |                5 |              8 |
+|  p_2_in                                         | u_calc/player2_x0                      | u_calcn_0_49083_BUFG                    |                3 |              8 |
+|  p_2_in                                         | u_calc/player1_x0                      | u_menu/player1_y_reg[2]_P               |                4 |              8 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/down_box_i                      | u_menu/bubble_mask_up_reg[3][89]        |                5 |              8 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_left[4][73]_i_2_n_2  | u_calc/bubble_map_left[4][73]_i_1_n_2   |                2 |              9 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_left[5][73]_i_2_n_2  | u_calc/bubble_map_left[5][73]_i_1_n_2   |                2 |              9 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_down[4][37]_i_2_n_2  | u_calc/bubble_map_down[4][37]_i_1_n_2   |                2 |              9 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_right[4][58]_i_2_n_2 | u_calc/bubble_map_right[4][58]_i_1_n_2  |                2 |              9 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_right[5][58]_i_2_n_2 | u_calc/bubble_map_right[5][58]_i_1_n_2  |                3 |              9 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_down[5][37]_i_2_n_2  | u_calc/bubble_map_down[5][37]_i_1_n_2   |                3 |              9 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_right[0][58]_i_1_n_2 | u_menu/bubble_mask_down_reg[3][10]      |                4 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_right[1][58]_i_1_n_2 | u_menu/bubble_mask_down_reg[3][10]      |                4 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_right[2][58]_i_1_n_2 | u_menu/bubble_mask_down_reg[3][10]      |                5 |             10 |
+|  clk_IBUF_BUFG                                  |                                        | rst_IBUF                                |                4 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_right[3][58]_i_1_n_2 | u_menu/bubble_mask_down_reg[3][10]      |                2 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_down[0][37]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                6 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_left[3][73]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                4 |             10 |
+|  clkdiv_reg__0_BUFG[1]                          | u_display_vga/v_count                  | u_display_vga/h_count[9]_i_2_n_2        |                3 |             10 |
+|  clkdiv_reg__0_BUFG[1]                          |                                        | u_display_vga/h_count[9]_i_2_n_2        |                2 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_down[1][37]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                6 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_down[2][37]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                4 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_down[3][37]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                5 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_left[0][73]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                4 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_left[1][73]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                2 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_calc/bubble_map_left[2][73]_i_1_n_2  | u_menu/bubble_mask_down_reg[3][10]      |                4 |             10 |
+|  clkdiv_reg_BUFG[0]                             | u_display_vga/layer4/E[0]              |                                         |                7 |             12 |
+|  clkdiv_reg__0_BUFG[1]                          |                                        | u_display_vga/rdn                       |                7 |             12 |
+|  clkdiv_reg[3]                                  | u_seg7_device/m0/U2/shift[0]_i_1_n_2   |                                         |                3 |             12 |
+|  u_music_player/clk_6MHz                        | u_music_player/count[13]_i_1_n_2       |                                         |                3 |             14 |
+| ~ps2_clk_IBUF_BUFG                              |                                        | u_ps2_keyboard/cnt[3]_i_2_n_2           |                6 |             14 |
+|  p_2_in                                         | u_calc/player1_x0                      | u_menu/speed1_reg[2][0]                 |                6 |             15 |
+|  p_2_in                                         | u_calc/player2_x0                      | u_menu/speed1_reg[2][0]                 |                6 |             15 |
+|  u_music_player/clk_4Hz                         |                                        |                                         |                3 |             15 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[857]_P               |               20 |             20 |
+|  clk_IBUF_BUFG                                  |                                        | u_music_player/clk_4Hz_0                |                6 |             23 |
+|  clk_IBUF_BUFG                                  |                                        | u_music_player/counter_6MHz[23]_i_1_n_2 |                7 |             24 |
+|  clkdiv_reg__0_BUFG[1]                          |                                        |                                         |                9 |             24 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[867]_P               |               26 |             26 |
+|  clkdiv_reg[3]                                  | u_seg7_device/m0/U2/shift[55]_i_1_n_2  | u_seg7_device/m0/U2/shift[62]_i_1_n_2   |               12 |             26 |
+|  p_0_in                                         | u_calc/bubble_time[2][31]_i_1_n_2      | u_menu/speed1_reg[2][1]                 |                9 |             27 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/bubble_mask_down_reg[3][10]      |               16 |             29 |
+|  p_0_in                                         | u_calc/bubble_time[3][31]_i_1_n_2      | u_menu/speed1_reg[2][0]                 |               10 |             32 |
+|  p_0_in                                         | u_calc/bubble_time[1][31]_i_1_n_2      | u_menu/speed1_reg[2][0]                 |                7 |             32 |
+|  p_0_in                                         | u_calc/bubble_time[0][31]_i_1_n_2      | u_menu/speed1_reg[2][1]                 |               13 |             32 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/speed1_reg[2][1]                 |               10 |             32 |
+|  clkdiv_reg[3]                                  | u_seg7_device/m0/U2/shift[55]_i_1_n_2  |                                         |               15 |             35 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/AR[0]                            |               17 |             37 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/bubble_mask_up_reg[3][89]        |               53 |             56 |
+|  clkdiv_reg_BUFG[0]                             |                                        |                                         |               39 |             70 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/raw_map_reg[73]                  |               78 |             84 |
+|  clkdiv_reg_BUFG[0]                             |                                        | n_1_62977_BUFG                          |               69 |             92 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/raw_map_reg[174]_C               |               75 |             92 |
+|  n_1_62977_BUFG                                 |                                        | u_menu/raw_map_reg[174]_C               |               69 |             92 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/raw_map_reg[564]                 |               88 |             95 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/raw_map_reg[792]                 |               86 |             96 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/raw_map_reg[914]                 |               94 |             98 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/raw_map_reg[794]                 |               96 |            105 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[283]_P               |              114 |            115 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_menu/tmp_map_reg[286]_P               |              116 |            119 |
+|  clkdiv_reg_BUFG[0]                             |                                        | u_calcn_0_49083_BUFG                    |              107 |            120 |
+|  n_0_63583_BUFG                                 |                                        | u_calcn_0_49083_BUFG                    |               92 |            120 |
+|  clkdiv_reg_BUFG[0]                             |                                        | n_0_63583_BUFG                          |               80 |            120 |
++-------------------------------------------------+----------------------------------------+-----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                   782 |
+| 2      |                     2 |
+| 3      |                     1 |
+| 4      |                     9 |
+| 5      |                     8 |
+| 7      |                     1 |
+| 8      |                    12 |
+| 9      |                     6 |
+| 10     |                    15 |
+| 12     |                     3 |
+| 14     |                     2 |
+| 15     |                     3 |
+| 16+    |                    29 |
++--------+-----------------------+
+
+

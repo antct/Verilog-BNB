@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ic_win1_img_synth_1" LaunchDir="C:/Xilinx/ISE/bubble_4/bubble_4.runs/ic_win1_img_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Jan 08 10:17:18 2017
+# Process ID: 10612
+# Current directory: C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1/top.vds
+# Journal file: C:/Xilinx/ISE/bubble_4/bubble_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
