@@ -10,14 +10,15 @@
 
 ### 开始界面，按WS可上下切换，按Enter键确认
 
-![1](img\1.jpg)
+![1](https://github.com/rere613/Verilog-BNB/blob/master/screenshots/1.jpg)
 
 ### 地图1
 
    玩家1使用WASD控制上左下右的移动，ctrl键释放泡泡
    玩家2使用IJKL控制上左下右的移动，enter键释放泡泡
-   ![1](img\2.jpg)
+   ![2](https://github.com/rere613/Verilog-BNB/blob/master/screenshots/2.jpg)
 
 ### 地图2
 
-![1](img\3.jpg)
+![3](https://github.com/rere613/Verilog-BNB/blob/master/screenshots/3.jpg)
+
